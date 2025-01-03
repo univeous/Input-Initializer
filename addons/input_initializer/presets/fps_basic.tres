@@ -1,0 +1,148 @@
+[gd_resource type="Resource" script_class="InputActionSet" load_steps=32 format=3 uid="uid://c517rogmvg2k6"]
+
+[ext_resource type="Script" path="res://addons/input_initializer/input_events.gd" id="1_22fjn"]
+[ext_resource type="Script" path="res://addons/input_initializer/input_action_set.gd" id="2_xg5aa"]
+
+[sub_resource type="InputEventKey" id="InputEventKey_22fjn"]
+device = -3
+physical_keycode = 87
+unicode = 119
+
+[sub_resource type="InputEventJoypadMotion" id="InputEventJoypadMotion_xg5aa"]
+axis = 1
+axis_value = -1.0
+
+[sub_resource type="Resource" id="Resource_7yy0j"]
+script = ExtResource("1_22fjn")
+events = Array[InputEvent]([SubResource("InputEventKey_22fjn"), SubResource("InputEventJoypadMotion_xg5aa")])
+metadata/_custom_type_script = ExtResource("1_22fjn")
+
+[sub_resource type="InputEventKey" id="InputEventKey_xg5aa"]
+device = -3
+physical_keycode = 83
+unicode = 115
+
+[sub_resource type="InputEventJoypadMotion" id="InputEventJoypadMotion_7yy0j"]
+axis = 1
+axis_value = 1.0
+
+[sub_resource type="Resource" id="Resource_kx1tc"]
+script = ExtResource("1_22fjn")
+events = Array[InputEvent]([SubResource("InputEventKey_xg5aa"), SubResource("InputEventJoypadMotion_7yy0j")])
+metadata/_custom_type_script = ExtResource("1_22fjn")
+
+[sub_resource type="InputEventKey" id="InputEventKey_7yy0j"]
+device = -3
+physical_keycode = 65
+unicode = 97
+
+[sub_resource type="InputEventJoypadMotion" id="InputEventJoypadMotion_kx1tc"]
+axis_value = -1.0
+
+[sub_resource type="Resource" id="Resource_khlfa"]
+script = ExtResource("1_22fjn")
+events = Array[InputEvent]([SubResource("InputEventKey_7yy0j"), SubResource("InputEventJoypadMotion_kx1tc")])
+metadata/_custom_type_script = ExtResource("1_22fjn")
+
+[sub_resource type="InputEventKey" id="InputEventKey_fj8su"]
+device = -3
+physical_keycode = 68
+unicode = 100
+
+[sub_resource type="InputEventJoypadMotion" id="InputEventJoypadMotion_u18xm"]
+axis_value = 1.0
+
+[sub_resource type="Resource" id="Resource_wab4h"]
+script = ExtResource("1_22fjn")
+events = Array[InputEvent]([SubResource("InputEventKey_fj8su"), SubResource("InputEventJoypadMotion_u18xm")])
+metadata/_custom_type_script = ExtResource("1_22fjn")
+
+[sub_resource type="InputEventJoypadMotion" id="InputEventJoypadMotion_22fjn"]
+axis = 3
+axis_value = -1.0
+
+[sub_resource type="Resource" id="Resource_xg5aa"]
+script = ExtResource("1_22fjn")
+events = Array[InputEvent]([SubResource("InputEventJoypadMotion_22fjn")])
+metadata/_custom_type_script = ExtResource("1_22fjn")
+
+[sub_resource type="InputEventJoypadMotion" id="InputEventJoypadMotion_khlfa"]
+axis = 3
+axis_value = 1.0
+
+[sub_resource type="Resource" id="Resource_fj8su"]
+script = ExtResource("1_22fjn")
+events = Array[InputEvent]([SubResource("InputEventJoypadMotion_khlfa")])
+metadata/_custom_type_script = ExtResource("1_22fjn")
+
+[sub_resource type="InputEventJoypadMotion" id="InputEventJoypadMotion_wab4h"]
+axis = 2
+axis_value = -1.0
+
+[sub_resource type="Resource" id="Resource_57bpj"]
+script = ExtResource("1_22fjn")
+events = Array[InputEvent]([SubResource("InputEventJoypadMotion_wab4h")])
+metadata/_custom_type_script = ExtResource("1_22fjn")
+
+[sub_resource type="InputEventJoypadMotion" id="InputEventJoypadMotion_1mdw8"]
+axis = 2
+axis_value = 1.0
+
+[sub_resource type="Resource" id="Resource_uf62p"]
+script = ExtResource("1_22fjn")
+events = Array[InputEvent]([SubResource("InputEventJoypadMotion_1mdw8")])
+metadata/_custom_type_script = ExtResource("1_22fjn")
+
+[sub_resource type="InputEventKey" id="InputEventKey_ii5bb"]
+device = -3
+physical_keycode = 32
+unicode = 32
+
+[sub_resource type="InputEventJoypadButton" id="InputEventJoypadButton_8mbsi"]
+
+[sub_resource type="Resource" id="Resource_224pv"]
+script = ExtResource("1_22fjn")
+events = Array[InputEvent]([SubResource("InputEventKey_ii5bb"), SubResource("InputEventJoypadButton_8mbsi")])
+metadata/_custom_type_script = ExtResource("1_22fjn")
+
+[sub_resource type="InputEventKey" id="InputEventKey_kx1tc"]
+device = -3
+physical_keycode = 4194326
+
+[sub_resource type="InputEventJoypadButton" id="InputEventJoypadButton_22fjn"]
+button_index = 1
+
+[sub_resource type="Resource" id="Resource_u18xm"]
+script = ExtResource("1_22fjn")
+events = Array[InputEvent]([SubResource("InputEventKey_kx1tc"), SubResource("InputEventJoypadButton_22fjn")])
+metadata/_custom_type_script = ExtResource("1_22fjn")
+
+[sub_resource type="InputEventKey" id="InputEventKey_khlfa"]
+device = -3
+physical_keycode = 4194325
+
+[sub_resource type="InputEventJoypadButton" id="InputEventJoypadButton_fj8su"]
+button_index = 7
+
+[sub_resource type="Resource" id="Resource_1mdw8"]
+script = ExtResource("1_22fjn")
+events = Array[InputEvent]([SubResource("InputEventKey_khlfa"), SubResource("InputEventJoypadButton_fj8su")])
+metadata/_custom_type_script = ExtResource("1_22fjn")
+
+[resource]
+resource_name = "fps_basic"
+script = ExtResource("2_xg5aa")
+actions = Dictionary[String, ExtResource("1_22fjn")]({
+"crouch": SubResource("Resource_u18xm"),
+"jump": SubResource("Resource_224pv"),
+"look_down": SubResource("Resource_fj8su"),
+"look_left": SubResource("Resource_57bpj"),
+"look_right": SubResource("Resource_uf62p"),
+"look_up": SubResource("Resource_xg5aa"),
+"move_backward": SubResource("Resource_kx1tc"),
+"move_forward": SubResource("Resource_7yy0j"),
+"move_left": SubResource("Resource_khlfa"),
+"move_right": SubResource("Resource_wab4h"),
+"sprint": SubResource("Resource_1mdw8")
+})
+metadata/_custom_type_script = ExtResource("2_xg5aa")

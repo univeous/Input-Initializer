@@ -1,0 +1,119 @@
+[gd_resource type="Resource" script_class="InputActionSet" load_steps=27 format=3 uid="uid://ct04vlcw3mvyo"]
+
+[ext_resource type="Script" path="res://addons/input_initializer/input_events.gd" id="1_n7e0l"]
+[ext_resource type="Script" path="res://addons/input_initializer/input_action_set.gd" id="2_v7m4u"]
+
+[sub_resource type="InputEventKey" id="InputEventKey_n7e0l"]
+device = -3
+physical_keycode = 90
+unicode = 122
+
+[sub_resource type="InputEventJoypadButton" id="InputEventJoypadButton_v7m4u"]
+
+[sub_resource type="Resource" id="Resource_yrdx4"]
+script = ExtResource("1_n7e0l")
+events = Array[InputEvent]([SubResource("InputEventKey_n7e0l"), SubResource("InputEventJoypadButton_v7m4u")])
+metadata/_custom_type_script = ExtResource("1_n7e0l")
+
+[sub_resource type="InputEventKey" id="InputEventKey_v7m4u"]
+device = -3
+physical_keycode = 88
+unicode = 120
+
+[sub_resource type="InputEventJoypadButton" id="InputEventJoypadButton_n7e0l"]
+button_index = 1
+
+[sub_resource type="Resource" id="Resource_kavlr"]
+script = ExtResource("1_n7e0l")
+events = Array[InputEvent]([SubResource("InputEventKey_v7m4u"), SubResource("InputEventJoypadButton_n7e0l")])
+metadata/_custom_type_script = ExtResource("1_n7e0l")
+
+[sub_resource type="InputEventKey" id="InputEventKey_lihwf"]
+device = -3
+physical_keycode = 4194325
+
+[sub_resource type="InputEventJoypadButton" id="InputEventJoypadButton_1ciaq"]
+button_index = 2
+
+[sub_resource type="Resource" id="Resource_mvadg"]
+script = ExtResource("1_n7e0l")
+events = Array[InputEvent]([SubResource("InputEventKey_lihwf"), SubResource("InputEventJoypadButton_1ciaq")])
+metadata/_custom_type_script = ExtResource("1_n7e0l")
+
+[sub_resource type="InputEventKey" id="InputEventKey_1ciaq"]
+device = -3
+physical_keycode = 88
+unicode = 120
+
+[sub_resource type="InputEventJoypadButton" id="InputEventJoypadButton_pi8yv"]
+button_index = 2
+
+[sub_resource type="Resource" id="Resource_ok5q0"]
+script = ExtResource("1_n7e0l")
+events = Array[InputEvent]([SubResource("InputEventKey_1ciaq"), SubResource("InputEventJoypadButton_pi8yv")])
+metadata/_custom_type_script = ExtResource("1_n7e0l")
+
+[sub_resource type="InputEventKey" id="InputEventKey_pi8yv"]
+device = -3
+physical_keycode = 4194322
+
+[sub_resource type="InputEventJoypadMotion" id="InputEventJoypadMotion_yrdx4"]
+axis = 1
+axis_value = 1.0
+
+[sub_resource type="Resource" id="Resource_t5eqd"]
+script = ExtResource("1_n7e0l")
+events = Array[InputEvent]([SubResource("InputEventKey_pi8yv"), SubResource("InputEventJoypadMotion_yrdx4")])
+metadata/_custom_type_script = ExtResource("1_n7e0l")
+
+[sub_resource type="InputEventKey" id="InputEventKey_yrdx4"]
+device = -3
+keycode = 4194319
+
+[sub_resource type="InputEventJoypadMotion" id="InputEventJoypadMotion_t5eqd"]
+axis_value = -1.0
+
+[sub_resource type="Resource" id="Resource_lihwf"]
+script = ExtResource("1_n7e0l")
+events = Array[InputEvent]([SubResource("InputEventKey_yrdx4"), SubResource("InputEventJoypadMotion_t5eqd")])
+metadata/_custom_type_script = ExtResource("1_n7e0l")
+
+[sub_resource type="InputEventKey" id="InputEventKey_t5eqd"]
+device = -3
+physical_keycode = 4194321
+
+[sub_resource type="InputEventJoypadMotion" id="InputEventJoypadMotion_kavlr"]
+axis_value = 1.0
+
+[sub_resource type="Resource" id="Resource_pi8yv"]
+script = ExtResource("1_n7e0l")
+events = Array[InputEvent]([SubResource("InputEventKey_t5eqd"), SubResource("InputEventJoypadMotion_kavlr")])
+metadata/_custom_type_script = ExtResource("1_n7e0l")
+
+[sub_resource type="InputEventKey" id="InputEventKey_kavlr"]
+device = -3
+physical_keycode = 4194320
+
+[sub_resource type="InputEventJoypadMotion" id="InputEventJoypadMotion_mvadg"]
+axis = 1
+axis_value = -1.0
+
+[sub_resource type="Resource" id="Resource_1ciaq"]
+script = ExtResource("1_n7e0l")
+events = Array[InputEvent]([SubResource("InputEventKey_kavlr"), SubResource("InputEventJoypadMotion_mvadg")])
+metadata/_custom_type_script = ExtResource("1_n7e0l")
+
+[resource]
+resource_name = "rpgmaker_style"
+script = ExtResource("2_v7m4u")
+actions = Dictionary[String, ExtResource("1_n7e0l")]({
+"action": SubResource("Resource_yrdx4"),
+"cancel": SubResource("Resource_kavlr"),
+"dash": SubResource("Resource_mvadg"),
+"menu": SubResource("Resource_ok5q0"),
+"move_down": SubResource("Resource_t5eqd"),
+"move_left": SubResource("Resource_lihwf"),
+"move_right": SubResource("Resource_pi8yv"),
+"move_up": SubResource("Resource_1ciaq")
+})
+metadata/_custom_type_script = ExtResource("2_v7m4u")
