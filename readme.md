@@ -27,7 +27,7 @@ Or better, use some package manager like [gd-plug](https://github.com/imjp94/gd-
 
 Don't forget to save your preset for future use. If your preset is general enough, very welcome to provide it to this repository to help others!
 
-Once the initialization is complete, this plugin has completed its mission; feel free to exclude it from the export.
+Once the initialization is complete, this plugin has completed its mission; feel free to exclude it from the export. Check [Exclude-Colored-Folders](https://github.com/univeous/Exclude-Colored-Folders)
 
 
 ## Notes
