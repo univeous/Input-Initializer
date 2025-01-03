@@ -38,7 +38,7 @@ If you need to see the inputs in the `InputMap` immediately, reload the project.
 
 When editing nested resources, I found the UX of the inspector in Godot to be very painful and unintuitive. I have to say this part of the experience is very bad :(
 
-If you have the same feeling, please give [this issue](https://github.com/godotengine/godot-proposals/issues/10125) a 👍, or better, make a PR to improve this part of the experience!
+If you have the same feeling, please give [this issue](https://github.com/godotengine/godot-proposals/issues/10125) a 👍, or better, make a PR to Godot to improve this part of the experience!
 
 
 ## Attached Presets
